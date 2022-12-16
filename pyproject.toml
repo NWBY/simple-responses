@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "simple-responses"
+version = "0.1.0"
+description = "Simple package to build dictionaries used for HTTP responses in AWS SAM projects."
+authors = ["Sam Newby <sam.newby19@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_responses"}]
+license = "MIT"
+homepage = "https://github.com/NWBY/simple-responses"
+repository = "https://github.com/NWBY/simple-responses"
+keywords = ["http-responses", "response", "serverless", "aws-sam"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
